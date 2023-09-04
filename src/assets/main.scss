@@ -1,0 +1,50 @@
+@import url("./null.scss");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Space+Mono&display=swap");
+
+@font-face {
+  font-family: Circular Std;
+  src: url("./fonts/circular-std-medium-500.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Circular Std;
+  src: url("./fonts/CircularStd-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Circular Std;
+  src: url("./fonts/CircularStd-Book.ttf");
+  font-weight: 450;
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Circular Std;
+  font-weight: 450;
+  background: var(--background-primary, #1c1c28);
+  color: var(--text-icon-primary, #fff);
+  background-image: linear-gradient(to right, #3939534d 1px, transparent 1px),
+    linear-gradient(to bottom, #3939534d 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1254px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: visible;
+}
